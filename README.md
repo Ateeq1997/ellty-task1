@@ -159,6 +159,3 @@ Ateeq ur Rehman
 <img width="1312" height="786" alt="Screenshot 2025-12-29 154741" src="https://github.com/user-attachments/assets/02584468-f786-4def-9c97-56a169df96b3" />
 
 
-
-[Your Name]
-Frontend Developer
