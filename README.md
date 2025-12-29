@@ -3,6 +3,8 @@
 This project is a React-based UI implementation of a Home page component designed from a Figma mockup.
 It includes multiple “All pages” buttons, each with its own independent dropdown containing selectable pages, matching the provided design and interaction requirements.
 
+Live Preview:https://ellty-task1-fawn.vercel.app/
+
 🔍 Task Overview
 
 The goal of this task was to:
