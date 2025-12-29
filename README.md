@@ -1,70 +1,164 @@
-# Getting Started with Create React App
+📄 All Pages Dropdown Component (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based UI implementation of a Home page component designed from a Figma mockup.
+It includes multiple “All pages” buttons, each with its own independent dropdown containing selectable pages, matching the provided design and interaction requirements.
 
-## Available Scripts
+🔍 Task Overview
 
-In the project directory, you can run:
+The goal of this task was to:
 
-### `npm start`
+Recreate the Home page UI based on provided Figma designs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Implement a dropdown component that opens from each “All pages” button
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ensure independent state management for each button
 
-### `npm test`
+Match the styling, layout, and interaction behavior shown in the designs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Use React with clean, readable, and well-organized code
 
-### `npm run build`
+🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React (Functional Components + Hooks)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+JavaScript (ES6+)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+HTML5
 
-### `npm run eject`
+CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+No external UI frameworks (custom components used for full control)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✨ Features
+Home Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Displays 5 identical “All pages” buttons
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Each button contains:
 
-## Learn More
+Label: All pages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Checkbox indicator
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+More (⋮) icon
 
-### Code Splitting
+Clicking any button opens its own dropdown
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Dropdown Component
 
-### Analyzing the Bundle Size
+Shows:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+“All pages” checkbox
 
-### Making a Progressive Web App
+Individual page options (Page 1 – Page 4)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Done button to close dropdown
 
-### Advanced Configuration
+Selecting “All pages” selects all page options
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Selecting individual pages updates only the current button
 
-### Deployment
+Each dropdown is fully independent
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Closing the dropdown does not affect other buttons
 
-### `npm run build` fails to minify
+Checkbox Implementation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Uses a custom checkbox component
+
+Ensures:
+
+Consistent size
+
+Consistent alignment
+
+Pixel-perfect appearance
+
+Avoids browser inconsistencies from native checkbox scaling
+
+🧠 State Management Logic
+
+Each “All pages” button maintains its own state
+
+State structure:
+
+{
+  id: number,
+  selectedPages: string[]
+}
+
+
+Dropdown actions update only the selected button
+
+No shared or global checkbox state
+
+📁 Project Structure
+src/
+│── App.js          # Main component logic
+│── Checkbox.jsx    # Custom checkbox component
+│── App.css         # Styling
+│── index.js        # Entry point
+
+🚀 Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/all-pages-dropdown.git
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run the Project
+npm start
+
+
+The app will run on:
+
+http://localhost:3000
+
+📸 UI Behavior Summary
+Action	Result
+Click “All pages” button	Opens dropdown
+Select “All pages” in dropdown	Selects all pages for that button only
+Select individual pages	Updates only that button
+Click Done	Closes dropdown
+Other buttons	Remain unaffected
+✅ Key Highlights
+
+Clean and readable React code
+
+Independent dropdown logic
+
+Custom checkbox for visual consistency
+
+Fully functional interactions
+
+Matches Figma design behavior
+
+Easy to extend or customize
+
+📌 Notes
+
+The UI can be further enhanced with:
+
+Animations
+
+Accessibility improvements
+
+Keyboard navigation
+
+Exact Figma color tokens
+
+These were intentionally kept minimal to focus on correctness and clarity.
+
+👤 Author
+Ateeq ur Rehman
+
+<img width="1527" height="634" alt="Screenshot 2025-12-29 154728" src="https://github.com/user-attachments/assets/ec027b25-dce0-4873-826e-c5030752881d" />
+<img width="1040" height="738" alt="Screenshot 2025-12-29 154826" src="https://github.com/user-attachments/assets/50fa5cd9-fca9-4fdd-ae81-ef47d046c07b" />
+<img width="1235" height="769" alt="Screenshot 2025-12-29 154816" src="https://github.com/user-attachments/assets/4e3b2080-cab1-465b-b82a-d2c4d5626d73" />
+<img width="1078" height="807" alt="Screenshot 2025-12-29 154751" src="https://github.com/user-attachments/assets/1284573d-e1b9-4b9d-b104-74c2b20b593c" />
+<img width="1312" height="786" alt="Screenshot 2025-12-29 154741" src="https://github.com/user-attachments/assets/02584468-f786-4def-9c97-56a169df96b3" />
+
+
+
+[Your Name]
+Frontend Developer
